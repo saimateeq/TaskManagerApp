@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.navbarH {
+  font-family: "Ole", cursive;
+  font-style: normal;
+}
+.text-xsm {
+  font-size: 8px;
+}
+.grid-container {
+  grid : 
+  "sidebar" "navbar" "navbar"
+  "sidebar" "main"
+  "sidebar"
+   / 25% 1fr;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.navbar{
+  grid-area: navbar;
+}
+.main{
+  grid-area: main;
+}
+
+.font-BlackOps{
+  font-family: "Black Ops One", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+.completed{
+  background-color: #016630 !important ;
+  color: white !important;
+}
+.active{
+  background-color: #FC8121 !important;
+  color: white !important;
+}
+.Overdue{
+  background-color: #9F0712 !important;
+  color: white !important;
+
+}
+
+@media screen and (min-width: 48rem) {
+  .grid-container {
+    grid : 
+    "sidebar navbar"
+    "sidebar main"
+     / 33% 1fr;
+  }
+}
